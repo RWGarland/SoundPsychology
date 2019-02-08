@@ -13,10 +13,9 @@ public class DragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
 {
     public static GameObject item;
 
-
     Transform startParent;
     Vector3 startPosition;
-    bool start = true;
+ //   bool start = true;
 
 
     public void OnBeginDrag(PointerEventData eventData) //Allows the user to get infotion on what they can grab

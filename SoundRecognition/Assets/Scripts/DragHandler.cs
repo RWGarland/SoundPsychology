@@ -15,33 +15,37 @@ public class DragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
 
     Transform startParent;
     Vector3 startPosition;
- //   bool start = true;
+    //   bool start = true;
 
 
-    public void OnBeginDrag(PointerEventData eventData) //Allows the user to get infotion on what they can grab
+    //Allows the user to get infotion on what they can grab
+    public void OnBeginDrag(PointerEventData eventData) 
     {
         item = gameObject;
         startPosition = transform.position;
         startParent = transform.parent;
 
-        GetComponent<CanvasGroup>().blocksRaycasts = false; //Using the canvus allows me to grab items and then move them using the mouse
+        //Using the canvas allows me to grab items and then move them using the mouse
+        GetComponent<CanvasGroup>().blocksRaycasts = false; 
       
     }
 
 
     public void OnDrag(PointerEventData eventData)
     {
-
-        transform.position = Input.mousePosition; //where the mouse or in this case finger will take the sprite.
+        //Gets position of finger on the screen while moving the object
+        transform.position = Input.mousePosition; 
     }
 
-    public void OnEndDrag(PointerEventData eventData) //if dropped outside of its area this will make it go back to its orgenal position.
+    //if dropped outside of its area this will make it go back to its orgenal position.
+    public void OnEndDrag(PointerEventData eventData) 
     {
         item = null;
 
         if (transform.parent == startParent)
         {
-            transform.position = startPosition; //once the child has been moved it will stay there
+            //sets the new parent for the object
+            transform.position = startPosition; 
         }
         GetComponent<CanvasGroup>().blocksRaycasts = true;
 

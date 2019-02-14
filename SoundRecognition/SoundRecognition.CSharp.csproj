@@ -85,6 +85,8 @@
     <Compile Include="Assets\Scripts\BlockScripts\slot5.cs" />
     <Compile Include="Assets\Scripts\BlockScripts\slot6.cs" />
     <Compile Include="Assets\Scripts\ButtonManger.cs" />
+    <Compile Include="Assets\Scripts\CatagoryScripts\Category_1.cs" />
+    <Compile Include="Assets\Scripts\CatagoryScripts\Category_2.cs" />
     <Compile Include="Assets\Scripts\gameMaster.cs" />
     <Compile Include="Assets\Scripts\InventoryManagerT1.cs" />
     <Compile Include="Assets\Scripts\InventoryManagerT2.cs" />

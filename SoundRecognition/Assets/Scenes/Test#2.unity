@@ -215,6 +215,7 @@ GameObject:
   - component: {fileID: 90200211}
   - component: {fileID: 90200210}
   - component: {fileID: 90200209}
+  - component: {fileID: 90200213}
   m_Layer: 9
   m_Name: Cup2
   m_TagString: Cup_
@@ -295,6 +296,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 90200207}
+--- !u!65 &90200213
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 90200207}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &157309798 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114551260256755944, guid: d4bc9518f76a4ff47ae2286920fbacda,
@@ -553,6 +566,23 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3370f5ecf36b0124c9e3aacc6f2f875c, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &363061294 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1738960697965864, guid: 3370f5ecf36b0124c9e3aacc6f2f875c,
+    type: 2}
+  m_PrefabInternal: {fileID: 363061293}
+--- !u!65 &363061295
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 363061294}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &429478315
 GameObject:
   m_ObjectHideFlags: 0
@@ -565,6 +595,7 @@ GameObject:
   - component: {fileID: 429478319}
   - component: {fileID: 429478318}
   - component: {fileID: 429478317}
+  - component: {fileID: 429478321}
   m_Layer: 10
   m_Name: Cup3
   m_TagString: Cup_
@@ -645,6 +676,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 429478315}
+--- !u!65 &429478321
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 429478315}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &503431436
 GameObject:
   m_ObjectHideFlags: 0
@@ -1686,6 +1729,7 @@ GameObject:
   - component: {fileID: 1678553915}
   - component: {fileID: 1678553914}
   - component: {fileID: 1678553913}
+  - component: {fileID: 1678553917}
   m_Layer: 8
   m_Name: Cup1
   m_TagString: Cup_
@@ -1766,6 +1810,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1678553911}
+--- !u!65 &1678553917
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1678553911}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1831319086 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1312390262284010, guid: f2ee66879853a6d4c9d1b631f2354aaf,
@@ -2086,6 +2142,7 @@ GameObject:
   - component: {fileID: 1918159393}
   - component: {fileID: 1918159392}
   - component: {fileID: 1918159391}
+  - component: {fileID: 1918159395}
   m_Layer: 11
   m_Name: Cup4
   m_TagString: Cup_
@@ -2166,6 +2223,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1918159389}
+--- !u!65 &1918159395
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1918159389}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &2002727147
 Prefab:
   m_ObjectHideFlags: 0

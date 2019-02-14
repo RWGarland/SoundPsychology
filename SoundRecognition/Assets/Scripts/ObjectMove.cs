@@ -12,6 +12,10 @@ public class ObjectMove : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
     Vector3 startPosition;
     //   bool start = true;
 
+        public void Start()
+    {
+        GetComponent<Collider>().enabled = true;
+    }
 
     //gains the infomation of the object for the user to interact with
     public void OnBeginDrag(PointerEventData eventData) 
@@ -43,6 +47,8 @@ public class ObjectMove : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
             transform.position = startPosition; 
         }
         GetComponent<CanvasGroup>().blocksRaycasts = true;
+        //turns off the collider so the counters wont go up more than they have to
+        GetComponent<Collider>().enabled = false;
 
     }
 

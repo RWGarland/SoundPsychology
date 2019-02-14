@@ -23,6 +23,7 @@ public class InventoryManagerT2 : MonoBehaviour, IDropHandler {
             {
                 //if a block is already in the spot it will go back to origenal parent
                 return transform.GetChild(0).gameObject;
+
             }
 
             return null;
@@ -36,6 +37,7 @@ public class InventoryManagerT2 : MonoBehaviour, IDropHandler {
         {
             //changes where the child obeject goes so it can stay where it is.
             ObjectMove.item.transform.SetParent(transform);
+
         }
     }
 }

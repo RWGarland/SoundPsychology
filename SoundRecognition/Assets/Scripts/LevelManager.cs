@@ -39,19 +39,19 @@ public class LevelManager : MonoBehaviour {
     //Loads test #7
     public void toggleTestNo7()
     {
-        SceneManager.LoadScene("");
+        SceneManager.LoadScene("Test3#1");
     }
 
     //Loads test #8
     public void toggleTestNo8()
     {
-        SceneManager.LoadScene("");
+        SceneManager.LoadScene("Test3#2");
     }
 
     //Loads test #9
     public void toggleTestNo9()
     {
-        SceneManager.LoadScene("");
+        SceneManager.LoadScene("Test3#3");
     }
 
     //Loads an end screen to show end of the tests

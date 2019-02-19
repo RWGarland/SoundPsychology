@@ -12,7 +12,8 @@ public class InventoryManagerT1 : MonoBehaviour, IDropHandler
     //sets the iamge for the cups to change for partisipant
     public Image image;
     //Sets up the sound for when a cup goes into the slot
-    public AudioSource Click;
+    public AudioSource Cup;
+    public AudioSource multiCup;
 
     public GameObject examinerBtn;
     public GameObject examinerMenuClose;
@@ -22,11 +23,14 @@ public class InventoryManagerT1 : MonoBehaviour, IDropHandler
     //fetches the audio componant at the start as well as hides some of the UI
     void start()
     {
+        //sets all the objects for the scene
         examinerBtn.SetActive (false);
         examinerMenuClose.SetActive(false);
         examinerMenu.SetActive (false);
         nextTest.SetActive(false);
-        Click = GetComponent<AudioSource>();
+        //Gets the sound componants in the object
+        Cup = GetComponent<AudioSource>();
+        multiCup = GetComponent<AudioSource>();
     }
 
     public GameObject item 
@@ -39,18 +43,21 @@ public class InventoryManagerT1 : MonoBehaviour, IDropHandler
                 //changes the image of starting sprite
                 image.sprite = Resources.Load<Sprite>("CupAssets/Test#1/Stack/Cup_Stack1"); 
                 Debug.Log("second item");
-                
-                //plays the audio when a cup is placed in the slot
-                Click.Play();
-                // only have to declare this once
-
             }
+
+            //plays the initial sound for when a cup is dropped
+            if (transform.childCount == 1)
+            {
+                //Plays the first cup sound
+                Cup.Play();
+            }
+
             if (transform.childCount > 1) //if there is 1 cup in place
             {
                 //changes the image of starting sprite
                 image.sprite = Resources.Load<Sprite>("CupAssets/Test#1/Stack/Cup_Stack2");
                 Debug.Log("third item");
-
+                multiCup.Play();
             }
 
             if (transform.childCount > 2) //if there is 2 cups in place

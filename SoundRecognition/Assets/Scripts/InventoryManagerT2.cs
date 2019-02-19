@@ -6,11 +6,11 @@ using UnityEngine.UI;
 public class InventoryManagerT2 : MonoBehaviour, IDropHandler {
 
 
-
+    public AudioSource drop;
    
 
     void Start () {
-		//where the sound might go
+        drop = GetComponent<AudioSource>();
 	}
 
 
@@ -37,7 +37,8 @@ public class InventoryManagerT2 : MonoBehaviour, IDropHandler {
         {
             //changes where the child obeject goes so it can stay where it is.
             ObjectMove.item.transform.SetParent(transform);
-
+            //play sound for drop
+            drop.Play();
         }
     }
 }

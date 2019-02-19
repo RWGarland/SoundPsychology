@@ -5,7 +5,23 @@ using UnityEngine;
 
 public class LevelManager : MonoBehaviour {
 
+    public GameObject MenuBtns;
+
+    void Start()
+    {
+        MenuBtns.SetActive(false);
+    }
+
+    public void toggleMenuBtns()
+    {
+        MenuBtns.SetActive(!MenuBtns.activeSelf);
+    }
+
     //allows the button to switch Tests
+    public void toggleTestNo1()
+    {
+        SceneManager.LoadScene("Test#1");
+    }
     //Switches to test 2
     public void toggleTestNo2()
     {

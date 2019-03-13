@@ -14,11 +14,14 @@ public class InventoryManagerT1 : MonoBehaviour, IDropHandler
     //Sets up the sound for when a cup goes into the slot
     public AudioSource Cup;
     public AudioSource multiCup;
+    //Gives the ability to turn off the White noise
+    public GameObject wNoise;
 
     public GameObject examinerBtn;
     public GameObject examinerMenuClose;
     public GameObject examinerMenu;
     public GameObject nextTest;
+   
 
     //fetches the audio componant at the start as well as hides some of the UI
     void start()
@@ -31,6 +34,7 @@ public class InventoryManagerT1 : MonoBehaviour, IDropHandler
         //Gets the sound componants in the object
         Cup = GetComponent<AudioSource>();
         multiCup = GetComponent<AudioSource>();
+       
     }
 
     public GameObject item 
@@ -86,6 +90,8 @@ public class InventoryManagerT1 : MonoBehaviour, IDropHandler
                 examinerMenuClose.SetActive(!examinerMenuClose.activeSelf);
                 examinerMenu.SetActive(!examinerMenu.activeSelf);
                 nextTest.SetActive(!nextTest.activeSelf);
+                //destroys white noise
+                Destroy(wNoise);
             }
 
             return null;

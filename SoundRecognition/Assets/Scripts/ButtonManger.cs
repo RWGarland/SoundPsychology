@@ -15,6 +15,8 @@ public class ButtonManger : MonoBehaviour {
     public GameObject examinerBtn;
     //sets the Accuraccy score
     public GameObject accScore;
+    //Gets the white noise object in level
+    public GameObject wNoise;
 
     // Use this for initialization
     void Start()
@@ -38,9 +40,12 @@ public class ButtonManger : MonoBehaviour {
          */
     public void toggleExaminerMenu()
     {
+        //Desplays UI when button is pushed
         examinerMenuClose.SetActive(!examinerMenuClose.activeSelf);
         nextTest.SetActive(!nextTest.activeSelf);
         examinerBtn.SetActive(!examinerBtn.activeSelf);
+        //destroys the white noise object
+        Destroy(wNoise);
     }
 
     //toggles the the accuraccy score for the blocks

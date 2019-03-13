@@ -175,6 +175,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 1025154004141778, guid: f1bfdba62a429e6418360441c1c44141, type: 2}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f1bfdba62a429e6418360441c1c44141, type: 2}
   m_IsPrefabParent: 0
@@ -372,7 +376,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 100
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -546,6 +550,7 @@ MonoBehaviour:
   image: {fileID: 0}
   Cup: {fileID: 0}
   multiCup: {fileID: 0}
+  wNoise: {fileID: 0}
   examinerBtn: {fileID: 0}
   examinerMenuClose: {fileID: 0}
   examinerMenu: {fileID: 0}
@@ -600,12 +605,12 @@ Prefab:
     - target: {fileID: 224260755470031228, guid: 3370f5ecf36b0124c9e3aacc6f2f875c,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 1480.0044
+      value: 1525.05
       objectReference: {fileID: 0}
     - target: {fileID: 224260755470031228, guid: 3370f5ecf36b0124c9e3aacc6f2f875c,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -200.45001
+      value: -233.6
       objectReference: {fileID: 0}
     - target: {fileID: 224260755470031228, guid: 3370f5ecf36b0124c9e3aacc6f2f875c,
         type: 2}
@@ -733,7 +738,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 100
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -920,7 +925,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 100
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -1228,6 +1233,7 @@ MonoBehaviour:
   image: {fileID: 0}
   Cup: {fileID: 0}
   multiCup: {fileID: 0}
+  wNoise: {fileID: 0}
   examinerBtn: {fileID: 0}
   examinerMenuClose: {fileID: 0}
   examinerMenu: {fileID: 0}
@@ -1620,15 +1626,15 @@ RectTransform:
   m_GameObject: {fileID: 860278362}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.2750205, y: 1.4854243, z: 1}
+  m_LocalScale: {x: 1.27502, y: 1.485424, z: 1}
   m_Children: []
   m_Father: {fileID: 503431437}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.011365, y: 41.7}
-  m_SizeDelta: {x: 1505.9, y: 240}
+  m_AnchoredPosition: {x: 0.013745, y: 64.8}
+  m_SizeDelta: {x: 1579.2, y: 268.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &860278364
 MonoBehaviour:
@@ -1694,7 +1700,7 @@ RectTransform:
   m_GameObject: {fileID: 1297920926}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.9999906, y: 0.9999906, z: 0.9999906}
+  m_LocalScale: {x: 0.99999905, y: 0.99999905, z: 0.99999905}
   m_Children:
   - {fileID: 1867605097}
   - {fileID: 2035062147}
@@ -1706,8 +1712,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.004425, y: -337}
-  m_SizeDelta: {x: 0.0089111, y: -679.1}
+  m_AnchoredPosition: {x: -1.6999989, y: -368}
+  m_SizeDelta: {x: 90.1, y: -733.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1297920928
 MonoBehaviour:
@@ -1824,7 +1830,7 @@ RectTransform:
   m_GameObject: {fileID: 1509169930}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.05, y: 1.05, z: 1.05}
   m_Children:
   - {fileID: 1881839968}
   m_Father: {fileID: 503431437}
@@ -1832,8 +1838,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 339.6}
-  m_SizeDelta: {x: 0, y: -679.1}
+  m_AnchoredPosition: {x: -1.6999999, y: 394.70004}
+  m_SizeDelta: {x: 3.2, y: -790.0999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1509169932
 MonoBehaviour:
@@ -2175,7 +2181,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 100
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -2222,7 +2228,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -2235,6 +2241,11 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!1 &1815481413 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1025154004141778, guid: f1bfdba62a429e6418360441c1c44141,
+    type: 2}
+  m_PrefabInternal: {fileID: 61143131}
 --- !u!1 &1831319086 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1312390262284010, guid: f2ee66879853a6d4c9d1b631f2354aaf,
@@ -2345,9 +2356,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e632116a8156a746a706b1e3c3d7f60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  image: {fileID: 1678553915}
+  image: {fileID: 0}
   Cup: {fileID: 0}
   multiCup: {fileID: 0}
+  wNoise: {fileID: 0}
   examinerBtn: {fileID: 0}
   examinerMenuClose: {fileID: 0}
   examinerMenu: {fileID: 0}
@@ -2462,6 +2474,7 @@ MonoBehaviour:
   image: {fileID: 1629354347}
   Cup: {fileID: 1881839973}
   multiCup: {fileID: 1881839974}
+  wNoise: {fileID: 1815481413}
   examinerBtn: {fileID: 549381871}
   examinerMenuClose: {fileID: 1242806938}
   examinerMenu: {fileID: 1328202131}
@@ -2753,7 +2766,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 100
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -2998,6 +3011,7 @@ MonoBehaviour:
   image: {fileID: 0}
   Cup: {fileID: 0}
   multiCup: {fileID: 0}
+  wNoise: {fileID: 0}
   examinerBtn: {fileID: 0}
   examinerMenuClose: {fileID: 0}
   examinerMenu: {fileID: 0}

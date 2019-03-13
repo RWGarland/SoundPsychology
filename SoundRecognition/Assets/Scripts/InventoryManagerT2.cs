@@ -5,11 +5,13 @@ using UnityEngine.UI;
 
 public class InventoryManagerT2 : MonoBehaviour, IDropHandler {
 
-
+    //sets audio
     public AudioSource drop;
    
 
-    void Start () {
+    void Start ()
+    {
+        //Gets the audio componant for the drop sound
         drop = GetComponent<AudioSource>();
 	}
 

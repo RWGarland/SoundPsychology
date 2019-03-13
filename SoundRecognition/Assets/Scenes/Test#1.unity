@@ -504,6 +504,7 @@ MonoBehaviour:
   image: {fileID: 0}
   Cup: {fileID: 0}
   multiCup: {fileID: 0}
+  wNoise: {fileID: 0}
   examinerBtn: {fileID: 0}
   examinerMenuClose: {fileID: 0}
   examinerMenu: {fileID: 0}
@@ -564,12 +565,12 @@ Prefab:
     - target: {fileID: 224260755470031228, guid: 3370f5ecf36b0124c9e3aacc6f2f875c,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 1480.0044
+      value: 1525.05
       objectReference: {fileID: 0}
     - target: {fileID: 224260755470031228, guid: 3370f5ecf36b0124c9e3aacc6f2f875c,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -200.45001
+      value: -233.20001
       objectReference: {fileID: 0}
     - target: {fileID: 224260755470031228, guid: 3370f5ecf36b0124c9e3aacc6f2f875c,
         type: 2}
@@ -1074,6 +1075,7 @@ MonoBehaviour:
   image: {fileID: 0}
   Cup: {fileID: 0}
   multiCup: {fileID: 0}
+  wNoise: {fileID: 0}
   examinerBtn: {fileID: 0}
   examinerMenuClose: {fileID: 0}
   examinerMenu: {fileID: 0}
@@ -1513,8 +1515,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.011365, y: 41.7}
-  m_SizeDelta: {x: 1505.9, y: 240}
+  m_AnchoredPosition: {x: 0.013745, y: 64.8}
+  m_SizeDelta: {x: 1579.2, y: 268.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &860278364
 MonoBehaviour:
@@ -1741,8 +1743,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.004425, y: -337}
-  m_SizeDelta: {x: 0.0089111, y: -679.1}
+  m_AnchoredPosition: {x: -1.7, y: -368}
+  m_SizeDelta: {x: 90.1, y: -733.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1297920928
 MonoBehaviour:
@@ -1859,7 +1861,7 @@ RectTransform:
   m_GameObject: {fileID: 1509169930}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.05, y: 1.05, z: 1.05}
   m_Children:
   - {fileID: 1881839968}
   m_Father: {fileID: 503431437}
@@ -1867,8 +1869,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 339.6}
-  m_SizeDelta: {x: 0, y: -679.1}
+  m_AnchoredPosition: {x: -1.7, y: 394.7}
+  m_SizeDelta: {x: 3.2, y: -790.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1509169932
 MonoBehaviour:
@@ -2380,9 +2382,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e632116a8156a746a706b1e3c3d7f60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  image: {fileID: 1678553915}
+  image: {fileID: 0}
   Cup: {fileID: 0}
   multiCup: {fileID: 0}
+  wNoise: {fileID: 0}
   examinerBtn: {fileID: 0}
   examinerMenuClose: {fileID: 0}
   examinerMenu: {fileID: 0}
@@ -2497,6 +2500,7 @@ MonoBehaviour:
   image: {fileID: 1629354347}
   Cup: {fileID: 1881839973}
   multiCup: {fileID: 1881839974}
+  wNoise: {fileID: 0}
   examinerBtn: {fileID: 549381871}
   examinerMenuClose: {fileID: 1242806938}
   examinerMenu: {fileID: 1328202131}
@@ -2956,6 +2960,7 @@ MonoBehaviour:
   image: {fileID: 0}
   Cup: {fileID: 0}
   multiCup: {fileID: 0}
+  wNoise: {fileID: 0}
   examinerBtn: {fileID: 0}
   examinerMenuClose: {fileID: 0}
   examinerMenu: {fileID: 0}

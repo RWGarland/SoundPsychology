@@ -2,14 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class LevelManager : MonoBehaviour {
 
     public GameObject MenuBtns;
+    public AudioSource WNoise;
 
     void Start()
     {
         MenuBtns.SetActive(false);
+        WNoise = GetComponent<AudioSource>();
     }
 
     public void toggleMenuBtns()
@@ -74,5 +77,17 @@ public class LevelManager : MonoBehaviour {
     public void toggleEndScreen()
     {
         SceneManager.LoadScene("");
+    }
+
+    //Toggles the white noise for testing
+    public void togglePlay()
+    {
+        WNoise.Play();
+    }
+
+    //Toggles the white noise for testing
+    public void togglePause()
+    {
+        WNoise.Stop();
     }
 }
